@@ -2,9 +2,46 @@ spring:
   application:
     name: config-server
 
+  datasource:
+    password: password
+    url: jdbc:postgresql://localhost:5431/config
+    username: sagir66
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      format_sql: true
+    show-sql: true
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - mappings
+
+
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Sagir66/online-shop-config-server
+          username: ismailsagir
+          password: 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
+          clone-on-start: true
 
 server:
-  port: 0
+  port: 8012
 
 eureka:
   client:

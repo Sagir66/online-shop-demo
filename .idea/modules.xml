@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/account-service.iml" filepath="$PROJECT_DIR$/account-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cart-service.iml" filepath="$PROJECT_DIR$/cart-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/category-service.iml" filepath="$PROJECT_DIR$/category-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-api-gateway.iml" filepath="$PROJECT_DIR$/cloud-api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-service.iml" filepath="$PROJECT_DIR$/config-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-service.iml" filepath="$PROJECT_DIR$/eureka-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/online-shop-service.iml" filepath="$PROJECT_DIR$/online-shop-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-service.iml" filepath="$PROJECT_DIR$/order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product-service.iml" filepath="$PROJECT_DIR$/product-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zull-ws.iml" filepath="$PROJECT_DIR$/zull-ws.iml" />
+    </modules>
+  </component>
+</project>

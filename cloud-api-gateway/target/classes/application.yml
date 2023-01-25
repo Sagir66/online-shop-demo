@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: api-gateway
+  main:
+    web-application-type: REACTIVE
+
+  cloud:
+   gateway:
+     routes:
+     - id: product-service
+       uri: lb://product-server
+       predicates:
+         - Path=/api/product/v1/**
+         - Method=GET
+         - Header=Authorization, Barer (.*)
+
+       filters:
+         - RemoveRequestHeader=Cookie
+         - RewritePath=/product-server/(?<segment>.*>, /$\{segment}
+
+
+server:
+  port: 8082
+
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

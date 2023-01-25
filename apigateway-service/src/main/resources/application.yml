@@ -1,10 +1,11 @@
 spring:
   application:
-    name: api-gateway-server
+    name: zuul-api-gateway
+
 
 
 server:
-  port: 0
+  port: 8011
 
 eureka:
   client:

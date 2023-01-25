@@ -1,10 +1,21 @@
 spring:
   application:
     name: cart-server
-
+  datasource:
+    password: password
+    url: jdbc:postgresql://localhost:5431/cart
+    username: sagir66
+  jpa:
+      hibernate:
+        ddl-auto: create-drop
+      properties:
+        hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+      show-sql: true
 
 server:
-  port: 0
+  port: ${PORT:0}
 
 eureka:
   client:
@@ -12,3 +23,5 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}

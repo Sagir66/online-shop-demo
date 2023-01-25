@@ -10,10 +10,11 @@
         <module name="cart-service" />
         <module name="category-service" />
         <module name="config-service" />
-        <module name="apigateway-service" />
+        <module name="cloud-api-gateway" />
         <module name="product-service" />
         <module name="order-service" />
         <module name="account-service" />
+        <module name="zull-ws" />
       </profile>
     </annotationProcessing>
   </component>

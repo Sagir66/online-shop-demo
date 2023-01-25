@@ -1,14 +1,37 @@
+server:
+  port: ${PORT:0}
 spring:
   application:
-    name: account-server
+    name: account
 
+  data:
+   mongodb:
+    authentication-database: admin
+    username: root
+    password: root
+    database: test_db
+    port: 27017
+    host: localhost
 
-server:
-  port: 0
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - mappings
+
 
 eureka:
   client:
-    register-with-eureka: true
-    fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:8761/eureka
+    fetch-registry: true
+    register-with-eureka: true
+    enabled: false
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}

@@ -1,0 +1,13 @@
+
+c
+java:S1192""FDefine a constant instead of duplicating this literal "ADMIN" 4 times.(Œ¶Ğÿ8¹²ÈØŞ0
+^
+java:S1874"BRemove this use of "EnableGlobalMethodSecurity"; it is deprecated.(ùÊœX8¢—ÁØŞ0
+S
+java:S6437"6Revoke and change this password, as it is compromised.(ñ‘Ô8İ˜ÁØŞ0
+R
+java:S6437!"6Revoke and change this password, as it is compromised.(ÈÔù8è˜ÁØŞ0
+`
+java:S5344*">Don't use the default "PasswordEncoder" relying on plain-text.(Ó¿£½üÿÿÿÿ8–íÌØŞ0
+[
+java:S18745"9Remove this use of "authorizeRequests"; it is deprecated.(¿Ğ±ûÿÿÿÿ8€¹ÈØŞ0
