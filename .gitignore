@@ -6,9 +6,6 @@
 /config-service/target/
 /eureka-service/target/
 /order-service/target/
-<<<<<<< HEAD
-/product-service/target/
-=======
 /product-service/target/
 /eureka-service/
->>>>>>> 235d9b9 (online shop)
+
